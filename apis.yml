@@ -1,23 +1,68 @@
 aid: fronius
+
 name: Fronius
-description: 'Fronius is a company surfaced via the API Evangelist harvest backlog (source: energy) and
-  added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.fronius.com/-/media/oneweb/others/c-fallback-connecting-what-matters-1540x866.webp?97886
+
+description: 'Fronius International is a global corporation founded in 1945, specializing in welding technology, photovoltaics, battery charging solutions, and energy management systems. With over 6,500 employees across 37 subsidiaries, Fronius delivers innovative, reliable products for solar energy, electric mobility, and industrial welding, emphasizing sustainability and quality. The company connects people, materials, and energy to build a safe, sustainable world.'
+
 url: https://raw.githubusercontent.com/api-evangelist/fronius/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:energy
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-22'
+
 modified: '2026-09-22'
+
 tags:
 - Company
-apis: []
+- Energy
+- Welding
+- Solar
+- Technology
+- Innovation
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/fronius-hosts.yml
+- type: SDKs
+  url: packages/fronius-packages.yml
+- type: Packages
+  url: packages/fronius-packages.yml
+- type: TermsOfService
+  url: https://www.fronius.com/en/terms-and-conditions
+- type: Newsroom
+  url: https://www.fronius.com/-/media/international/c/code-of-conduct/c_terms_code_of_conduct_en.pdf
+- type: Blog
+  url: https://blog.fronius.com
+- type: GitHubOrganization
+  url: https://github.com/Fronius
+- type: DomainSecurity
+  url: security/fronius-domain-security.yml
 - type: Website
   url: https://www.fronius.com/
+- type: Documentation
+  url: https://www.fronius.com/en/help-center
+- type: Support
+  url: https://www.fronius.com/en/contact
+
+apis: []
+x-enrichment:
+  date: '2026-09-22'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
