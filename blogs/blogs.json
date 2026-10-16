@@ -2,6 +2,13 @@
   "repo": "fronius",
   "feeds": [
     {
+      "source": "https://blog.fronius.com",
+      "feed_url": "https://blog.fronius.com/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    },
+    {
       "source": "https://www.fronius.com/-/media/international/c/code-of-conduct/c_terms_code_of_conduct_en.pdf",
       "feed_url": "https://www.fronius.com/-/media/international/c/code-of-conduct/c_terms_code_of_conduct_en.pdf",
       "title": "",
@@ -10,5 +17,5 @@
     }
   ],
   "post_count": 0,
-  "fetched": "2026-10-03T12:30:02Z"
+  "fetched": "2026-10-10T13:15:00Z"
 }
